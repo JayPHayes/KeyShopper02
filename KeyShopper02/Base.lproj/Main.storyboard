@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0Nm-bP-ZaD">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="0Nm-bP-ZaD">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Nm-bP-ZaD" id="67R-4N-9Qq">
@@ -66,7 +66,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="JCB-qW-Xh7">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="JCB-qW-Xh7">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JCB-qW-Xh7" id="Nf4-Qz-hBj">
@@ -87,39 +87,55 @@
             <point key="canvasLocation" x="-711" y="391"/>
         </scene>
         <!--Master List-->
-        <scene sceneID="ueU-lH-1aX">
+        <scene sceneID="vbf-Xh-rD0">
             <objects>
-                <collectionViewController title="Master List" id="MOc-rH-wyO" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="NoP-Ij-iem">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="57K-EJ-u1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Master List" id="aPe-tv-fGD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vWd-Gy-DDY"/>
+                        <viewControllerLayoutGuide type="bottom" id="RS5-Qk-bKu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c5E-T4-im8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search Master List" translatesAutoresizingMaskIntoConstraints="NO" id="cET-e0-5i2">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Master List" id="D4t-F7-shJ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="W92-UC-Bzs">
+                            <connections>
+                                <segue destination="cnv-xX-ja2" kind="show" id="c25-Kr-ex8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="168.80000000000001" y="1095.2023988005999"/>
+        </scene>
+        <!--Master Add Edit-->
+        <scene sceneID="dsr-1a-hf6">
+            <objects>
+                <viewController title="Master Add Edit" id="cnv-xX-ja2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hn1-8W-g8K"/>
+                        <viewControllerLayoutGuide type="bottom" id="3EN-pd-DZa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hAc-At-8aT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tsl-gq-kpv">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="JCx-aV-BLU">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="MOc-rH-wyO" id="eDc-hi-xTi"/>
-                            <outlet property="delegate" destination="MOc-rH-wyO" id="OGU-2w-jRe"/>
-                        </connections>
-                    </collectionView>
-                    <tabBarItem key="tabBarItem" title="Master List" id="OOR-gy-07Q"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="261-qf-VD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Master Item" id="cxU-j5-RVN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KVF-x9-euF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-668" y="1145"/>
+            <point key="canvasLocation" x="878" y="1096"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ryL-dn-SG1">
@@ -131,15 +147,34 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="040-Y5-9ZI" kind="relationship" relationship="viewControllers" id="bsV-Pd-YzC"/>
-                        <segue destination="MOc-rH-wyO" kind="relationship" relationship="viewControllers" id="Brb-sf-2rj"/>
                         <segue destination="B68-pe-WcC" kind="relationship" relationship="viewControllers" id="gIj-Rv-Jzy"/>
                         <segue destination="Xm5-IT-uVY" kind="relationship" relationship="viewControllers" id="Rn2-vI-nSp"/>
+                        <segue destination="040-Y5-9ZI" kind="relationship" relationship="viewControllers" id="bsV-Pd-YzC"/>
+                        <segue destination="wBm-zi-wJd" kind="relationship" relationship="viewControllers" id="5Cb-YG-J4h"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R70-E6-8eq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2327" y="664"/>
+        </scene>
+        <!--Master List-->
+        <scene sceneID="cRK-Ib-dPn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wBm-zi-wJd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Master List" id="76Z-rM-xcw"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="672-pI-2TD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aPe-tv-fGD" kind="relationship" relationship="rootViewController" id="Eje-9e-hAq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TyU-V4-pTs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-770.39999999999998" y="1095.2023988005999"/>
         </scene>
     </scenes>
 </document>
