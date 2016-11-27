@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9787720E1DEB097000269D11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787720D1DEB097000269D11 /* AppDelegate.swift */; };
-		978772101DEB097000269D11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787720F1DEB097000269D11 /* ViewController.swift */; };
 		978772131DEB097000269D11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 978772111DEB097000269D11 /* Main.storyboard */; };
 		978772161DEB097000269D11 /* KeyShopper02.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 978772141DEB097000269D11 /* KeyShopper02.xcdatamodeld */; };
 		978772181DEB097000269D11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 978772171DEB097000269D11 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		9787720A1DEB097000269D11 /* KeyShopper02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyShopper02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9787720D1DEB097000269D11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9787720F1DEB097000269D11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		978772121DEB097000269D11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		978772151DEB097000269D11 /* KeyShopper02.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KeyShopper02.xcdatamodel; sourceTree = "<group>"; };
 		978772171DEB097000269D11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				9787720D1DEB097000269D11 /* AppDelegate.swift */,
-				9787720F1DEB097000269D11 /* ViewController.swift */,
 				978772111DEB097000269D11 /* Main.storyboard */,
 				978772171DEB097000269D11 /* Assets.xcassets */,
 				978772191DEB097000269D11 /* LaunchScreen.storyboard */,
@@ -140,7 +137,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				978772101DEB097000269D11 /* ViewController.swift in Sources */,
 				978772161DEB097000269D11 /* KeyShopper02.xcdatamodeld in Sources */,
 				9787720E1DEB097000269D11 /* AppDelegate.swift in Sources */,
 			);
